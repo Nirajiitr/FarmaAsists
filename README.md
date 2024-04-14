@@ -49,28 +49,46 @@ Visit `http://localhost:3000` in your web browser to access the application.
 
          |
          v
+         
 +---------------------+
+
 | Data Preprocessing  (using Keras image preprocessing) |
 +---------------------+
+
          |
          v
+         
 +--------------------------+
+
 | Data Augmentation (Specially in the Healthy category) |
+
 +--------------------------+
+
          |
          v
+         
 +----------------------+
+
 | Model Building (DenseNet21 + Autoencoder + CNN + 1 dense layer) |
+
 +----------------------+
+
          |
          v
+         
 +--------------------------+
+
 | Model Training & Tuning (Used Dropout layer, Early-stopping, learning-rate scheduler) |
+
 +--------------------------+
+
          |
          v
+         
 +--------------------------+
+
 | Model Evaluation (F1 score & accuracy) |
+
 +--------------------------+
 
 
