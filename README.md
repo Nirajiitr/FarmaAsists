@@ -42,8 +42,11 @@ Visit `http://localhost:3000` in your web browser to access the application.
 ## Approach
 
 +---------------------+
+
 | Data Collection     |
+
 +---------------------+
+
          |
          v
 +---------------------+
