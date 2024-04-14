@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot using Gemini</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+  <style>
+    .chat-background {
+      background-image: url('https://via.placeholder.com/800x600');
+      background-size: cover;
+    }
+    .large-font {
+      font-size: 1.5rem; /* You can adjust the font size as needed */
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 80px;
+   
+      background-color: #4caf50; /* Green navbar */
+      color: white;
+    }
+  
+    .navbar img {
+      width: 50px; /* Adjust the width of the logo */
+    height: auto; /* Automatically adjust height while maintaining aspect ratio */
+    border-radius: 50%; /* Make the logo round */
+    margin-right: 10px; /* Add margin to the right of the logo */
+    padding: 30 0px;
+    }
+    .navbar a + a {
+      margin-left: 20px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s; 
+      font-weight: bold; 
+      font-size: 25px;
+    }
+    .navbar a:hover {
+      background-color: #3e8e41; /* Dark green on hover */
+    }
+    .chat-input {
+      border: 2px solid #4caf50;
+      border-radius: 999px;
+      padding: 10px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+    .chat-input:focus {
+      border-color: #1e6bae;
+    }
+    .send-button {
+      background-color: #1e6bae;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .send-button:hover {
+      background-color: #155d9e;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar flex justify-between items-center py-4 px-6">
+   
+    <div>
+      <img src="https://img.freepik.com/premium-photo/logotype-green-leaf-that-has-shape-street-minimal-design-white-background-ia_664580-783.jpg?w=740" alt="Logo" class="h-8">
+    </div>
+    
+    <div class="flex justify-end items-center space-x-4">
+      <a href="http://127.0.0.1:5000/home" class="text-white" name="">Home</a>
+      <a href="chatbot" class="text-white" name="chatbot">Chatbot</a>
+      <a href="about" class="text-white" name="about">About Us</a>
+    </div>
+  </div>
+  <div  class="flex flex-col justify-between h-screen bg-green-100" style="background-image: url('https://img.freepik.com/free-photo/abstract-transparent-green-leaves_23-2148239780.jpg?size=626&ext=jpg'); background-size: cover; background-position: center;">
+  
+  <div class="bg-white shadow-lg">
+  
+    <p class="text-xl font-bold text-center text-green-500 py-4">
+    
+         
+      Spud Guardian
+ 
+      
+    </p>
+   
+      
+    
+  </div>
+  <div id="messageHolder" class="large-font"></div>
+  <div class="flex flex-row p-4">
+    <input
+      type="text"
+      class="flex-1 chat-input"
+      placeholder="Type your message here..."
+      name="chat"
+      id="chat"
+    />
+    <button id="btn" class="m-2 send-button">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 transform rotate-90"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+        />
+      </svg>
+    </button>
+  </div></div>
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+  <script type="module" src="{{ url_for('static', filename='../static/script/script.js') }}"></script>
+</body>
+</html>
