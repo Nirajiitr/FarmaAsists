@@ -1,10 +1,10 @@
-# FarmAsist
+# FarmAsist #
 ```markdown
 # FarmaAsists
 
 FarmaAsists is a project aimed at assisting farmers with various aspects of farming.
 
-## Features
+#Features#
 
 - Accurate Potato Disease Detection
 - A chatbot for any Potato Disease related preventions and specific cases
