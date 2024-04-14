@@ -40,12 +40,40 @@ Visit `http://localhost:3000` in your web browser to access the application.
 **Frontend:** CSS, HTML, Javascript
 **Backend:** Flask
 **ML:** Pandas, TensorFlow, Scikit-learn
-## Machine Learning Model
 
-We have used a hybrid model of DenseNet, Autoencoder and Custom CNN with a dense layer for the classification.
+## Approach
+
+ +---------------------+
+              | Data Collection     |
+              +---------------------+
+                         |
+                         v
+               +---------------------+
+               | Data Preprocessing  (using Keras image preprocessing  |
+               +---------------------+
+                         |
+                         v
+            +--------------------------+
+            | Data Augmentation ( Specially in the Healthy category)       |
+            +--------------------------+
+                         |
+                         v
+              +----------------------+
+              | Model Building ( DenseNet21 + Autoencoder + CNN + 1 dense layer      |
+              +----------------------+
+                         |
+                         v
+           +--------------------------+
+           | Model Training & Tuning ( Used Drop-out layer, Early-stopping, learning-rate scheduler  |
+           +--------------------------+
+                         |
+                         v
+           +--------------------------+
+           | Model Evaluation  ( F1 score & the accuracy )       |
+           +--------------------------+
 
 ## Results 
-
+As it is an imbalanced dataset, so we have chosen the F1 score as our evaluation metric.
 | Category                           | F1 Score |
 |------------------------------------|----------|
 | Healthy            | 0.93    |
@@ -61,9 +89,11 @@ Despite encountering unavoidable circumstances and facing a shortage of time, ou
 **Enhanced UI with React:**
 
 Implementing React for improved frontend interactivity and user experience.
+
 **MySQL Database Connection:**
 
 Resolving unexpected errors hindering registration and login page integration with the MySQL database.
+
 **Advanced ML Models and Hyperparameter Tuning:**
 
 Incorporating ViT and ResNet models, coupled with rigorous hyperparameter tuning, to enhance ML model robustness and accuracy.  
