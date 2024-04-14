@@ -36,8 +36,12 @@ Visit `http://localhost:3000` in your web browser to access the application.
 
 ## Technologies :
 **Frontend:** CSS, HTML, Javascript
+
 **Backend:** Flask
+
 **ML:** Pandas, TensorFlow, Scikit-learn
+
+**Database:** MySQL
 
 ## Approach
 
@@ -91,6 +95,7 @@ Visit `http://localhost:3000` in your web browser to access the application.
 
 +--------------------------+
 
+For the chatbot, we have used the open-source Google Gemini API.
 
 ## Results 
 As it is an imbalanced dataset, so we have chosen the F1 score as our evaluation metric.
@@ -102,10 +107,11 @@ As it is an imbalanced dataset, so we have chosen the F1 score as our evaluation
 
 ## Video :
 
+https://drive.google.com/file/d/19REm2TT5T5zIQPnLkm11MjdHd3vwAGeV/view?usp=sharing
 
 ## Challenges :
 
-Despite encountering unavoidable circumstances and facing a shortage of time, our team persevered through numerous challenges in the development phase. Through collaborative efforts and unwavering determination, we successfully navigated these obstacles and ultimately delivered the application
+Despite encountering unavoidable circumstances and facing a shortage of time, our team persevered through numerous challenges in the development phase. Through collaborative efforts and unwavering determination, we successfully navigated these obstacles and ultimately delivered the application.
 
 ## Improvements
 
@@ -120,6 +126,10 @@ Resolving unexpected errors hindering registration and login page integration wi
 **Advanced ML Models and Hyperparameter Tuning:**
 
 Incorporating ViT and ResNet models, coupled with rigorous hyperparameter tuning, to enhance ML model robustness and accuracy.  
+
+**More types of Vegetables:**
+
+We can train the model on the tomato and pepper-bell image dataset as well.
 
 ## Contributing
 
