@@ -1,10 +1,10 @@
 # FarmAsist #
-```markdown
-# FarmaAsists
 
-FarmaAsists is a project aimed at assisting farmers with various aspects of farming.
+# FarmaAsists #
 
-#Features#
+FarmaAsists is a project aimed at assisting farmers associated with potato crops, to detect  the diseases of those crops and also providing them with relevant measures, to prevent them. 
+
+# Features #
 
 - Accurate Potato Disease Detection
 - A chatbot for any Potato Disease related preventions and specific cases
@@ -35,6 +35,38 @@ python app.py
 ```
 
 Visit `http://localhost:3000` in your web browser to access the application.
+
+## Technologies :
+**Frontend:** CSS, HTML, Javascript
+**Backend:** Flask
+**ML:** Pandas, TensorFlow, Scikit-learn
+## Machine Learning Model
+
+We have used a hybrid model of DenseNet, Autoencoder and Custom CNN with a dense layer for the classification.
+
+## Results 
+
+| Category                           | F1 Score |
+|------------------------------------|----------|
+| Healthy            | 0.93    |
+| Early Blight          | 0.99     |
+| Late Blight | 0.98     |
+
+## Challenges :
+
+Despite encountering unavoidable circumstances and facing a shortage of time, our team persevered through numerous challenges in the development phase. Through collaborative efforts and unwavering determination, we successfully navigated these obstacles and ultimately delivered the application
+
+## Improvements
+
+**Enhanced UI with React:**
+
+Implementing React for improved frontend interactivity and user experience.
+**MySQL Database Connection:**
+
+Resolving unexpected errors hindering registration and login page integration with the MySQL database.
+**Advanced ML Models and Hyperparameter Tuning:**
+
+Incorporating ViT and ResNet models, coupled with rigorous hyperparameter tuning, to enhance ML model robustness and accuracy.  
 
 ## Contributing
 
