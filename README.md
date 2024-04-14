@@ -2,7 +2,7 @@
 
 FarmaAsists is a project aimed at assisting farmers associated with potato crops, to detect  the diseases of those crops and also providing them with relevant measures, to prevent them. 
 
-# Features #
+## Features 
 
 - Accurate Potato Disease Detection
 - A chatbot for any Potato Disease related preventions and specific cases
