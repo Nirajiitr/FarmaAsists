@@ -42,33 +42,34 @@ Visit `http://localhost:3000` in your web browser to access the application.
 ## Approach
 
 +---------------------+
-| Data Collection |
+| Data Collection     |
 +---------------------+
-|
-v
+         |
+         v
 +---------------------+
-| Data Preprocessing (using Keras image preprocessing) |
+| Data Preprocessing  (using Keras image preprocessing) |
 +---------------------+
-|
-v
+         |
+         v
 +--------------------------+
 | Data Augmentation (Specially in the Healthy category) |
 +--------------------------+
-|
-v
+         |
+         v
 +----------------------+
 | Model Building (DenseNet21 + Autoencoder + CNN + 1 dense layer) |
 +----------------------+
-|
-v
+         |
+         v
 +--------------------------+
 | Model Training & Tuning (Used Dropout layer, Early-stopping, learning-rate scheduler) |
 +--------------------------+
-|
-v
+         |
+         v
 +--------------------------+
 | Model Evaluation (F1 score & accuracy) |
 +--------------------------+
+
 
 ## Results 
 As it is an imbalanced dataset, so we have chosen the F1 score as our evaluation metric.
