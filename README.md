@@ -1,7 +1,5 @@
 # FarmAsist #
 
-# FarmaAsists #
-
 FarmaAsists is a project aimed at assisting farmers associated with potato crops, to detect  the diseases of those crops and also providing them with relevant measures, to prevent them. 
 
 # Features #
@@ -43,34 +41,34 @@ Visit `http://localhost:3000` in your web browser to access the application.
 
 ## Approach
 
- +---------------------+
-              | Data Collection     |
-              +---------------------+
-                         |
-                         v
-               +---------------------+
-               | Data Preprocessing  (using Keras image preprocessing  |
-               +---------------------+
-                         |
-                         v
-            +--------------------------+
-            | Data Augmentation ( Specially in the Healthy category)       |
-            +--------------------------+
-                         |
-                         v
-              +----------------------+
-              | Model Building ( DenseNet21 + Autoencoder + CNN + 1 dense layer      |
-              +----------------------+
-                         |
-                         v
-           +--------------------------+
-           | Model Training & Tuning ( Used Drop-out layer, Early-stopping, learning-rate scheduler  |
-           +--------------------------+
-                         |
-                         v
-           +--------------------------+
-           | Model Evaluation  ( F1 score & the accuracy )       |
-           +--------------------------+
++---------------------+
+| Data Collection |
++---------------------+
+|
+v
++---------------------+
+| Data Preprocessing (using Keras image preprocessing) |
++---------------------+
+|
+v
++--------------------------+
+| Data Augmentation (Specially in the Healthy category) |
++--------------------------+
+|
+v
++----------------------+
+| Model Building (DenseNet21 + Autoencoder + CNN + 1 dense layer) |
++----------------------+
+|
+v
++--------------------------+
+| Model Training & Tuning (Used Dropout layer, Early-stopping, learning-rate scheduler) |
++--------------------------+
+|
+v
++--------------------------+
+| Model Evaluation (F1 score & accuracy) |
++--------------------------+
 
 ## Results 
 As it is an imbalanced dataset, so we have chosen the F1 score as our evaluation metric.
@@ -79,6 +77,9 @@ As it is an imbalanced dataset, so we have chosen the F1 score as our evaluation
 | Healthy            | 0.93    |
 | Early Blight          | 0.99     |
 | Late Blight | 0.98     |
+
+## Video :
+
 
 ## Challenges :
 
